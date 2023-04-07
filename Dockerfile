@@ -15,3 +15,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install "tensorflow-text==2.11.*"
 
 EXPOSE 8875
+
+ENTRYPOINT [ "python", "api.py" ]
