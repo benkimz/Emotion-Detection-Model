@@ -2,14 +2,13 @@
 
 > Steps
 ---
-```console
-$git clone https://github.com/benkimz/Emotion-Detection-Model.git
 
-$cd ./Emotion-Detection-Model
+```bash
+$ git clone https://github.com/benkimz/Emotion-Detection-Model.git
 
-$git clone https://huggingface.co/benkimz/emotions-model
-```
+$ cd ./Emotion-Detection-Model
 
-```console
-$docker build -t my_model . 
+$ git clone https://huggingface.co/benkimz/emotions-model
+
+$ docker build -t my_model . 
 ```
