@@ -20,7 +20,7 @@ def load_emotions():
 emotions = load_emotions() 
 
 model = tf.keras.models.load_model(
-        filepath="tf-emotions-model", 
+        filepath=MODEL_NAME, 
         compile=False, 
         safe_mode=True
 )
