@@ -2,7 +2,7 @@ FROM tensorflow/serving:latest
 
 ARG MODEL_NAME=emotions-model
 
-ARG MODEL_PATH=/models/${MODEL_NAME}
+ARG MODEL_PATH=/models/model
 
 COPY ${MODEL_NAME} ${MODEL_PATH}
 
