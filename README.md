@@ -1,6 +1,6 @@
 # Emotion-Detection-Model
 
-> Steps
+## Steps
 ---
 
 ```bash
