@@ -1,8 +1,12 @@
 FROM tensorflow/serving:latest
 
-ARG MODEL_NAME=emotions_model
+ARG MODEL_NAME=emotions-model
 
 ARG MODEL_PATH=/models/${MODEL_NAME}
+
+RUN apt-get update && \
+    apt-get install -y git && \
+    git clone https://huggingface.co/benkimz/emotions-model
 
 COPY ${MODEL_NAME} ${MODEL_PATH}
 
