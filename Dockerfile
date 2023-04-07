@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y git
 
 RUN git clone https://github.com/benkimz/Emotion-Detection-Model.git ./    
 
-RUN git clone git clone https://huggingface.co/benkimz/emotions-model
+RUN git clone https://huggingface.co/benkimz/emotions-model
 
 RUN pip3 install --upgrade pip 
 
