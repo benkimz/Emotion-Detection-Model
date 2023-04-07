@@ -21,8 +21,7 @@ emotions = load_emotions()
 
 model = tf.keras.models.load_model(
         filepath=MODEL_NAME, 
-        compile=False, 
-        safe_mode=True
+        compile=False
 )
 
 @app.route('/emotions', methods=['GET'])
