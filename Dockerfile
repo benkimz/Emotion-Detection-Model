@@ -3,7 +3,7 @@ FROM python:3.9-slim-buster
 WORKDIR /emotions
 
 RUN apt-get update && apt-get install -y git && \
-        git clone git clone https://github.com/benkimz/Emotion-Detection-Model.git
+git clone https://github.com/benkimz/Emotion-Detection-Model.git
 
 COPY ./Emotion-Detection-Model/* /emotions/       
 
