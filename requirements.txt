@@ -1,5 +1,6 @@
-numpy
-Flask
 tensorflow
 tensorflow_hub
 tensorflow_text
+Flask
+numpy
+requests
