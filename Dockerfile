@@ -12,7 +12,7 @@ RUN pip3 install --upgrade pip
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install "tensorflow-text==2.11.*"
+RUN pip install "tensorflow-text==2.12.0"
 
 EXPOSE 8875
 
