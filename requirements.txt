@@ -1,6 +1,4 @@
-numpy
 requests
-tensorflow==2.10.0
-tensorflow_hub
-tensorflow_text
-Flask
+numpy==1.22.4
+Flask==2.2.3
+tensorflow==2.12.0
