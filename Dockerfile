@@ -1,4 +1,4 @@
-FROM tensorflow/serving:latest
+FROM tensorflow/serving:2.8.4
 
 ARG MODEL_NAME=emotions-model
 
