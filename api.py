@@ -3,7 +3,6 @@ import json
 import numpy as np
 
 import tensorflow as tf
-import tensorflow_hub as hub
 import tensorflow_text as text
 
 from flask import Flask, jsonify, request
@@ -19,10 +18,7 @@ def load_emotions():
 
 emotions = load_emotions() 
 
-model = tf.keras.models.load_model(
-        filepath=MODEL_NAME, 
-        compile=False
-)
+model = tf.keras.models.load_model(MODEL_NAME, compile=False)
 
 @app.route('/emotions', methods=['GET'])
 def view_all_emotions():
