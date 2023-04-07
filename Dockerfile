@@ -14,6 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN pip install "tensorflow-text==2.11.*"
 
-RUN pip install tf-models-official==2.11.0
-
 EXPOSE 8875
