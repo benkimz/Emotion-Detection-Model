@@ -1,13 +1,13 @@
-FROM tensorflow/serving:2.8.4
+FROM python:3.9-slim-buster
 
-ARG MODEL_NAME=emotions-model
+COPY . /emotions
 
-ARG MODEL_PATH=/models/model/1/
+WORKDIR /emotions
 
-COPY ${MODEL_NAME} ${MODEL_PATH}
+RUN pip3 install --upgrade pip 
 
-EXPOSE 8500
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD tensorflow_model_server --port=8500 --rest_api_port=8501 \
-  --model_name=${MODEL_NAME} --model_base_path=${MODEL_PATH} \
-  --tensorflow_session_parallelism=1
+RUN pip3 install "tensorflow-text==2.11.*"
+
+RUN pip3 install tf-models-official==2.11.0
